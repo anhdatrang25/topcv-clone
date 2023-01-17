@@ -4,12 +4,13 @@ import Layer2 from "./layout/Layer2";
 import Layer4 from "./layout/Layer4";
 import Layer5 from "./layout/Layer5";
 import Layer6 from "./layout/Layer6";
-
-import "./style.css";
+import Headers from "./layout/Header";
+import Footer from "./layout/Footer";
 
 export default function Home() {
   return (
     <div>
+      <Headers logo='acsess/img/topcv-logo-4.png' sub1='acsess/img/nav-job.png' sub2='acsess/img/nav-cv.png' sub3='acsess/img/nav-contest.png'/>
       <Layer1
         cpn1="acsess/img/fpt.png"
         cpn2="acsess/img/onemoutn.png"
@@ -30,6 +31,7 @@ export default function Home() {
         ip="acsess/img/app-download.png"
       ></Layer5>
       <Layer6></Layer6>
+      <Footer cc='acsess/img/bct.png'></Footer>
     </div>
   );
 }
